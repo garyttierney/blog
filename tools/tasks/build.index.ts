@@ -7,15 +7,24 @@ import * as gulp from 'gulp';
 import * as gulpLoadPlugins from 'gulp-load-plugins';
 import * as readingTime from 'reading-time';
 import * as hljs from 'highlight.js';
+import * as Highlights from 'highlights';
+import * as marked from 'marked';
 
+const highlighter = new Highlights();
 const plugins = <any>gulpLoadPlugins();
+
+var renderer = new marked.Renderer();
+renderer.code = function (code : string, language : string) {
+    return highlighter.highlightSync({
+        fileContents: code,
+        scopeName: `source.${language}`
+    });
+};
 
 export = function (cb : any) {
     return gulp.src(join(config.POSTS_SRC, '**', '*.md'))
         .pipe(plugins.markdownToJson({
-            highlight: function (code : string, lang : string, callback : any) {
-                return hljs.highlight(lang, code).value;
-            }
+            renderer: renderer
         }))
         .pipe(through.obj(
             function (chunk : any, enc : string, callback : any) {

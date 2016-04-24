@@ -1,0 +1,658 @@
+.editor {
+    color: #839496;
+    background-color: #002b36;
+}
+.editor .gutter,
+ .gutter {
+    color: #839496;
+    background-color: #073642;
+}
+.editor .gutter .line-number.cursor-line,
+ .gutter .line-number.cursor-line {
+    background-color: #084150;
+}
+.editor .invisible-character,
+ .invisible-character {
+    color: #0a4d5e;
+}
+.editor .indent-guide,
+ .indent-guide {
+    color: #0a4d5e;
+}
+.editor .cursor,
+ .cursor {
+    border-color: #fdf6e3;
+}
+.editor .selection .region,
+ .selection .region {
+    background-color: #073642;
+}
+.editor .fold-marker:after,
+ .fold-marker:after,
+.editor .gutter .line-number.folded,
+ .gutter .line-number.folded {
+    color: #d33682;
+}
+.editor .bracket-matcher .region,
+ .bracket-matcher .region {
+    border-color: #d33682;
+}
+.comment {
+    color: #586e75;
+    font-style: italic;
+}
+.string.quoted {
+    color: #2aa198;
+}
+.string.regexp {
+    color: #dc322f;
+}
+.constant.numeric {
+    color: #d33682;
+}
+.constant.language {
+    color: #b58900;
+}
+.constant.character,
+.constant.other {
+    color: #cb4b16;
+}
+.variable {
+    color: #268bd2;
+}
+.keyword {
+    color: #859900;
+}
+.storage {
+    color: #859900;
+}
+.entity.name.class,
+.entity.name.type,
+.entity.name.function {
+    color: #268bd2;
+}
+.entity.other.attribute-name {
+    color: #657b83;
+}
+.support.function {
+    color: #268bd2;
+}
+.support.function.builtin {
+    color: #859900;
+}
+.support.type,
+.support.class {
+    color: #859900;
+}
+.tag.entity.name {
+    color: #268bd2;
+}
+.tag.punctuation.definition.html,
+.tag.punctuation.definition.begin,
+.tag.punctuation.definition.end {
+    color: #586e75;
+}
+.invalid.deprecated {
+    color: #b58900;
+    text-decoration: underline;
+}
+.invalid.illegal {
+    color: #dc322f;
+    text-decoration: underline;
+}
+.none {
+    color: #839496;
+}
+.source.c .meta.preprocessor,
+.source.cpp .meta.preprocessor {
+    color: #dc322f;
+}
+.source.c .keyword.control.directive,
+.source.cpp .keyword.control.directive {
+    color: #cb4b16;
+}
+.source.c .punctuation.string,
+.source.cpp .punctuation.string {
+    color: #2aa198;
+}
+.source.c .constant,
+.source.cpp .constant {
+    color: #cb4b16;
+}
+.source.c .constant.numeric,
+.source.cpp .constant.numeric,
+.source.c .constant.language.c,
+.source.cpp .constant.language.c {
+    color: #2aa198;
+}
+.source.c .storage,
+.source.cpp .storage {
+    color: #b58900;
+}
+.source.c .entity,
+.source.cpp .entity {
+    color: #839496;
+}
+.source.c .entity.name.function.preprocessor,
+.source.cpp .entity.name.function.preprocessor {
+    color: #dc322f;
+}
+.source.c .support.type,
+.source.cpp .support.type {
+    color: #b58900;
+}
+.source.c .support.type.posix-reserved,
+.source.cpp .support.type.posix-reserved {
+    color: #839496;
+}
+.source.c .variable.other.dot-access,
+.source.cpp .variable.other.dot-access {
+    color: #839496;
+}
+.source.c .variable.parameter.preprocessor,
+.source.cpp .variable.parameter.preprocessor {
+    color: #dc322f;
+}
+.source.coffee .support.class {
+    color: #859900;
+}
+.source.coffee .variable,
+.source.coffee .entity.name.function,
+.source.coffee .entity.name.class {
+    color: #268bd2;
+}
+.source.coffee .variable.parameter.function {
+    color: #839496;
+}
+.source.coffee .variable.other.readwrite {
+    color: #859900;
+}
+.source.coffee .storage.type.function {
+    color: #859900;
+}
+.source.coffee .entity.name {
+    color: #839496;
+}
+.source.coffee .meta.brace.round,
+.source.coffee .meta.brace.square {
+    color: #839496;
+}
+.source.coffee .meta.delimiter {
+    color: #839496;
+}
+.source.coffee .storage.type.class {
+    color: #859900;
+}
+.source.coffee .punctuation.terminator {
+    color: #839496;
+}
+.source.coffee .punctuation.section.embedded {
+    color: #dc322f;
+}
+.source.coffee .constant.numeric {
+    color: #d33682;
+}
+.source.coffee .constant.language.boolean {
+    color: #b58900;
+}
+.source.go .operator {
+    color: #839496;
+}
+.source.go .operator.assignment {
+    color: #859900;
+}
+.source.java .keyword.operator {
+    color: #859900;
+}
+.source.java .keyword.import {
+    color: #cb4b16;
+}
+.source.java .storage.modifier.import {
+    color: #586e75;
+}
+.source.java .meta.class .storage.modifier {
+    color: #b58900;
+}
+.source.java .meta.class .meta.class.identifier .entity.name.type.class {
+    color: #268bd2;
+}
+.source.java .storage.type.primitive.array {
+    color: #859900;
+}
+.source.java .constant.numeric {
+    color: #d33682;
+}
+.source.java .constant.other {
+    color: #cb4b16;
+}
+.source.java .storage.type {
+    color: #859900;
+}
+.source.java .meta.method-call {
+    color: #dc322f;
+}
+.source.java .meta.method-call .meta.method {
+    color: #6c71c4;
+}
+.source.java .meta.method-call .punctuation.definition.seperator.parameter {
+    color: #859900;
+}
+.source.java .punctuation.definition.method-parameters {
+    color: #93a1a1;
+}
+.source.js .constant {
+    color: #859900;
+}
+.source.js .comma {
+    color: #839496;
+}
+.source.js .support.class {
+    color: #859900;
+}
+.source.js .entity.name.type {
+    color: #b58900;
+}
+.source.js .entity.name {
+    color: #839496;
+}
+.source.js .meta.brace {
+    color: #839496;
+}
+.source.js .keyword {
+    color: #839496;
+}
+.source.js .keyword.operator.new {
+    color: #859900;
+}
+.source.js .keyword.control {
+    color: #859900;
+}
+.source.js .keyword.control.regexp {
+    color: #2aa198;
+}
+.source.js .variable {
+    color: #268bd2;
+}
+.source.js .variable.parameter {
+    color: #839496;
+}
+.source.js .regexp {
+    color: #2aa198;
+}
+.source.js .support.function {
+    color: #6c71c4;
+}
+.source.js .support.constant {
+    color: #839496;
+}
+.source.js .constant.numeric {
+    color: #839496;
+}
+.source.js .punctuation.terminator.statement {
+    color: #839496;
+}
+.source.js .meta.delimiter.method.period {
+    color: #839496;
+}
+.source.js .meta.brace.square {
+    color: #268bd2;
+}
+.source.js .meta.brace.curly {
+    color: #268bd2;
+}
+.source.js .string.quoted.template .embedded.source {
+    color: #839496;
+}
+.source.js .string.quoted.template .embedded.source > .embedded.punctuation {
+    color: #dc322f;
+}
+.source.js.jsx .entity.name.tag {
+    color: #268bd2;
+}
+.gfm .link .entity {
+    color: #6c71c4;
+}
+.gfm .list.ordered {
+    color: #859900;
+}
+.gfm .list.unordered {
+    color: #b58900;
+}
+.gfm .raw {
+    font-style: italic;
+}
+.gfm.support {
+    color: #586e75;
+}
+.gfm.support.quote {
+    color: #6c71c4;
+}
+.markup.bold {
+    font-weight: bold;
+}
+.markup.italic {
+    font-style: italic;
+}
+.markup.heading {
+    color: #268bd2;
+}
+.markup.link {
+    color: #2aa198;
+}
+.markup.deleted {
+    color: #dc322f;
+}
+.markup.changed {
+    color: #b58900;
+}
+.markup.inserted {
+    color: #2aa198;
+}
+.source.php .storage.type.class {
+    color: #b58900;
+}
+.source.php .storage.type.function {
+    color: #cb4b16;
+}
+.source.php .storage.modifier {
+    color: #b58900;
+}
+.source.php .entity.name.type.class {
+    color: #839496;
+}
+.source.php .entity.name.function {
+    color: #839496;
+}
+.source.php .entity.other {
+    color: #839496;
+}
+.source.php .variable {
+    color: #268bd2;
+}
+.source.php .punctuation.definition {
+    color: #839496;
+}
+.source.php .punctuation.definition.comment {
+    color: #586e75;
+}
+.source.php .punctuation.definition.array {
+    color: #dc322f;
+}
+.source.php .punctuation.definition.string {
+    color: #839496;
+}
+.source.php .punctuation.definition.variable {
+    color: #859900;
+}
+.source.php .support.function.construct {
+    color: #b58900;
+}
+.source.php .support.function.array {
+    color: #859900;
+}
+.source.php .keyword.operator.class {
+    color: #b58900;
+}
+.source.php .keyword.operator.assignment {
+    color: #859900;
+}
+.source.php .keyword.other {
+    color: #dc322f;
+}
+.source.python .entity {
+    color: #839496;
+}
+.source.python .entity.name {
+    color: #268bd2;
+}
+.source.python .entity.other {
+    color: #268bd2;
+}
+.source.python .function {
+    color: #268bd2;
+}
+.source.python .function.magic {
+    color: #268bd2;
+}
+.source.python .punctuation.string {
+    color: #2aa198;
+}
+.source.python .keyword.operator {
+    color: #839496;
+}
+.source.python .keyword.operator.quantifier {
+    color: #2aa198;
+}
+.source.python .keyword.operator.logical {
+    color: #859900;
+}
+.source.python .keyword.control.import {
+    color: #cb4b16;
+}
+.source.python .keyword.other {
+    color: #859900;
+}
+.source.python .constant.language {
+    color: #268bd2;
+}
+.source.python .constant.character {
+    color: #2aa198;
+}
+.source.python .constant.other {
+    color: #dc322f;
+}
+.source.python .entity.name.type.class {
+    color: #268bd2;
+}
+.source.python .variable {
+    color: #839496;
+}
+.source.python .support.function.builtin {
+    color: #268bd2;
+}
+.source.python .support.type.exception.python {
+    color: #b58900;
+}
+.source.python .support.type.python {
+    color: #268bd2;
+}
+.source.python .storage.type.string {
+    color: #2aa198;
+}
+.source.python .storage.type.class {
+    color: #859900;
+}
+.source.python .storage.type.class.todo {
+    color: #d33682;
+}
+.source.python .storage.type.function {
+    color: #859900;
+}
+.source.python .punctuation.definition.parameters {
+    color: #839496;
+}
+.source.python .punctuation.section.function.begin {
+    color: #839496;
+}
+.source.python .punctuation.separator.parameters {
+    color: #839496;
+}
+.source.ruby .meta.embedded .punctuation.section {
+    color: #dc322f;
+}
+.source.ruby .punctuation.definition {
+    color: #839496;
+}
+.source.ruby .punctuation.definition.string {
+    color: #dc322f;
+}
+.source.ruby .punctuation.definition.comment {
+    color: #586e75;
+}
+.source.ruby .entity.inherited-class {
+    color: #b58900;
+}
+.source.ruby .variable.parameter {
+    color: #839496;
+}
+.source.ruby .variable.constant {
+    color: #b58900;
+}
+.source.ruby .constant.boolean {
+    color: #2aa198;
+}
+.source.ruby .instance .punctuation.definition {
+    color: #268bd2;
+}
+.source.ruby .class {
+    color: #b58900;
+}
+.source.ruby .class.control {
+    color: #839496;
+}
+.source.ruby .module {
+    color: #b58900;
+}
+.source.ruby .require .keyword.other.special-method {
+    color: #cb4b16;
+}
+.source.ruby .keyword.other.special-method {
+    color: #cb4b16;
+}
+.source.ruby .keyword.other {
+    color: #859900;
+}
+.source.ruby .keyword.control {
+    color: #859900;
+}
+.source.ruby .keyword.operator {
+    color: #839496;
+}
+.source.ruby .special-method {
+    color: #268bd2;
+}
+.source.ruby .symbol {
+    color: #2aa198;
+}
+.source.ruby .symbol .punctuation.definition {
+    color: #2aa198;
+}
+.source.ruby .hashkey {
+    color: #dc322f;
+}
+.source.ruby .hashkey .punctuation.definition {
+    color: #dc322f;
+}
+.source.ruby .string.regexp {
+    color: #dc322f;
+}
+.source.ruby .todo {
+    color: #d33682;
+}
+.source.ruby .variable.ruby.global {
+    color: #268bd2;
+}
+.source.ruby .variable.ruby.global .punctuation {
+    color: #268bd2;
+}
+.source.ruby .variable.block {
+    color: #268bd2;
+}
+.source.ruby .variable.self {
+    color: #2aa198;
+}
+.source.ruby .punctuation.separator {
+    color: #839496;
+}
+.source.ruby .numeric {
+    color: #2aa198;
+}
+.source.ruby .punctuation.section.regexp {
+    color: #dc322f;
+}
+.source.ruby .string.interpolated {
+    color: #2aa198;
+}
+.source.ruby .string.interpolated .embedded.line.ruby .punctuation .source.ruby {
+    color: #dc322f;
+}
+.source.ruby .string.interpolated .embedded.line.ruby .source.ruby {
+    color: #839496;
+}
+.source.ruby .string.interpolated .embedded.line.ruby .source.ruby .punctuation.array,
+.source.ruby .string.interpolated .embedded.line.ruby .source.ruby .punctuation.function {
+    color: #839496;
+}
+.source.ruby .support.function {
+    color: #839496;
+}
+.source.ruby .support.function.kernel {
+    color: #859900;
+}
+.source.scala .variable {
+    color: #93a1a1;
+}
+.source.scala .declaration {
+    color: #93a1a1;
+    font-weight: bold;
+}
+.source.scala .comparison {
+    color: #93a1a1;
+}
+.source.scala .class,
+.source.scala .type {
+    color: #b58900;
+}
+.source.scala .val {
+    font-weight: normal;
+}
+.source.scala .variable {
+    font-weight: bold;
+}
+.source.scala .variable.parameter {
+    color: #6c71c4;
+    font-weight: normal;
+}
+.source.scala .control.flow {
+    color: #93a1a1;
+    font-weight: bold;
+}
+.source.scala .constant.language {
+    color: #93a1a1;
+    font-weight: bold;
+}
+.source.scala .function.declaration {
+    color: #6c71c4;
+}
+.source.scala .modifier.other {
+    font-weight: bold;
+}
+.source.scala .package {
+    color: #93a1a1;
+}
+.source.scala .variable.import {
+    font-weight: normal;
+}
+.source.scala .type .bounds,
+.source.scala .type .class {
+    color: #6c71c4;
+}
+.source.scala .documentation :not(.embedded).link.entity {
+    color: #268bd2;
+    text-decoration: underline;
+}
+.source.scala .documentation :not(.embedded) .class,
+.source.scala .documentation :not(.embedded) .parameter {
+    color: #93a1a1;
+}
+.source.scala .documentation :not(.embedded) .description {
+    color: #586e75;
+}
+.source.scala .embedded {
+    color: #6c7c7c;
+    font-style: italic;
+}
+.source.scala .embedded .margin,
+.source.scala .embedded .delimiters {
+    font-style: normal;
+}

@@ -10,6 +10,7 @@ export function getAssetDependencies() : AssetDependency[] {
         { type: 'css', path: './node_modules/font-awesome/css/font-awesome.css' },
         { type: 'css', path: './node_modules/skeleton-css/css/normalize.css' },
         { type: 'css', path: './node_modules/skeleton-css/css/skeleton.css' },
+        { type: 'css', path: './src/css/solarized-dark-highlights.css' },
         { type: 'font', glob: './node_modules/font-awesome/fonts/*.{otf,eot,svg,ttf,woff,woff2}' }
     ];
 }
