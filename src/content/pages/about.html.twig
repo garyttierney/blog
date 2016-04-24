@@ -1,1 +1,28 @@
 {% extends "default.html.twig" %}
+
+{% block body %}
+    <section class="about row">
+        <div class="six columns">
+            <h2>Me</h2>
+            <p>My name is Gary. I'm a software developer who lives in Glasgow. In my spare time I enjoy tinkering with
+            Java and C, and also the new tools in the web world like TypeScript.</p>
+            <p>I run Linux on all my home machines and servers and find fun in configuring and managing Linux systems.
+            Also breaking them.</p>
+            <p>If you'd like to get in touch, see my <a href="/contact.html">contact page</a>.</p>
+        </div>
+        <div class="six columns">
+            <h2>This website</h2>
+            <p>I built this website using a bunch of <a href="http://gulpjs.com/">Gulp</a> tasks which compile and
+                arrange my posts
+                into a listing. The code is written in <a href="https://www.typescriptlang.org/">TypeScript</a> and I
+                write the posts themselves in Markdown with the help of <a
+                        href="https://github.com/chjj/marked">marked</a>.</p>
+            <p>The <a href="http://paularmstrong.github.io/swig">Swig</a> templating library was used to provide base
+                templates for the various layouts needed throughout the
+                website, and SASS was used to style it (along with <a href="http://getskeleton.com">skeletoncss</a>).
+                For syntax highlighting I used <a href="https://highlightjs.org/">highlight.js</a>.</p>
+            <p>The favicon is from <a href="http://www.picol.org/">PICOL.</a></p>
+            <p>You can see the source code for it all <a href="https://github.com/garyttierney/blog">here</a>.</p>
+        </div>
+    </section>
+{% endblock %}
