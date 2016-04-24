@@ -1,6 +1,10 @@
 {% extends "default.html.twig" %}
 {% import "macros.html.twig" as macros %}
 
+{% block title %}
+    {{ site.title }} - Archive - Page #{{ pageNumber }}
+{% endblock %}
+
 {% block meta %}
     {% if hasPrev %}
         <link rel="previous" href="{{ macros.archiveurl(pageNumber - 1) }}">
