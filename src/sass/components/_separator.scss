@@ -1,0 +1,48 @@
+hr {
+  margin: 2em 0;
+  text-align: center;
+  line-height: 1px;
+  height: 1px;
+  background: #ddd;
+  border: 15px solid #fff;
+  border-left: 0;
+  border-right: 0;
+  font-size: 1.5em;
+}
+
+hr::before {
+  position: absolute;
+  content: '';
+  background: transparent;
+  border-spacing: 10px;
+  margin-top: -24px;
+  transform: scale(0.5);
+  margin-left: 1px;
+  width: 49px;
+  height: 49px;
+  transition: .3s ease-out all;
+  border-radius: 100px;
+}
+
+hr::after {
+  content: '§';
+  color: #ddd;
+  display: inline;
+  background: #fff;
+  padding: .2em .5em;
+  border: 1px solid #fff;
+  border-radius: 100px;
+  transition: .3s ease all;
+}
+
+hr:hover {
+  &:after {
+    border: 1px solid #e2e2e2;
+  }
+  &:before {
+    transform: scale(1);
+    background: #e2e2e2;
+    transition: 3s cubic-bezier(.5, -0.74, .79, 1.53) all;
+    animation: out 0.3s cubic-bezier(0.5, -0.74, 0.79, 1.53) 3.2s forwards;
+  }
+}

@@ -1,0 +1,31 @@
+<!doctype html>
+<html class="no-js" lang="">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>{% block title %}{{ site.title }}{% endblock %}</title>
+    <meta name="description" content="A website and blog about Linux and programming.">
+    <meta name="robots" content="index,follow">
+
+    {% block meta %}
+        <meta name="keywords" content="linux,programming">
+    {% endblock %}
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="name, gary.tierney@gmx.com">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <link href='https://fonts.googleapis.com/css?family=Droid+Sans+Mono' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/css/main.css">
+</head>
+<body>
+
+<div class="container">
+    {% block content %}
+        Placeholder.
+    {% endblock %}
+</div>
+
+</body>
+</html>

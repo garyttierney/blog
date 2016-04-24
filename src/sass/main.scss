@@ -1,0 +1,25 @@
+@import 'variables';
+@import 'base';
+@import 'typography';
+@import 'syntax';
+@import 'components/separator';
+@import 'components/navbar';
+@import 'components/contact';
+@import 'components/post';
+@import 'components/post_listing';
+
+body > .container {
+  padding-top: 3em;
+
+  > header {
+    text-align: center;
+
+    h1 {
+      color: $brand-color;
+      margin-bottom: 5px;
+      padding-bottom: 5px;
+    }
+
+    margin-bottom: 3em;
+  }
+}

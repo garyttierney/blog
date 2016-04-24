@@ -1,0 +1,52 @@
+{% extends "default.html.twig" %}
+{% import "macros.html.twig" as macros %}
+
+{% block meta %}
+    {% if hasPrev %}
+        <link rel="previous" href="{{ macros.archiveurl(pageNumber - 1) }}">
+    {% endif %}
+    {% if hasNext %}
+        <link rel="next" href="{{ macros.archiveurl(pageNumber + 1) }}">
+    {% endif %}
+{% endblock %}
+
+{% block body %}
+    <section class="post-listing">
+
+        {% for post in pagePosts %}
+            <article>
+                <header class="row">
+                    <h2 class="eight columns">{{ macros.postlink(post.id, post.title) }}</h2>
+                    <aside class="four columns">
+                        <span class="reading-time">
+                            <i class="fa fa-clock-o" aria-hidden="true"></i> {{ post.readingTime }}
+                        </span>
+                        <time>{{ post.date | date('Y-m-d') }}</time>
+                    </aside>
+                </header>
+                {{ post.summary | raw }}
+            </article>
+
+            {% if not loop.last %}
+                <hr/>
+            {% endif %}
+        {% endfor %}
+
+        <ul class="pagination">
+            <li>{{ macros.archivelink(1, 'First', pageNumber == 1) }}</li>
+            <li>
+                {{ macros.archivelink(pageNumber - 1, 'Previous', hasPrev == false) }}
+            </li>
+            {% for id in range %}
+                <li>
+                    {{ macros.archivelink(id, id, id == pageNumber) }}
+                </li>
+            {% endfor %}
+            <li>
+                {{ macros.archivelink(pageNumber + 1, 'Next', hasNext == false) }}
+            </li>
+
+            <li>{{ macros.archivelink(numPages, 'Last', numPages == pageNumber) }}</li>
+        </ul>
+    </section>
+{% endblock %}

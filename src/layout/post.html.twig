@@ -1,0 +1,26 @@
+{% extends "default.html.twig" %}
+
+{% block title %}
+    {{ site }} - {{ post.title }}
+{% endblock %}
+
+{% block meta %}
+    <meta name="keywords" content="{{ post.categories|join(',') }}">
+{% endblock %}
+
+{% block body %}
+    <article class="post">
+        <header class="row">
+            <h2 class="eight columns">{{ post.title }}</h2>
+            <aside class="four columns">
+                <span class="reading-time" style="display:block;">
+                <i class="fa fa-clock-o" aria-hidden="true"></i> {{ post.readingTime }}
+                </span>
+                <time>{{ post.date | date('Y-m-d') }}</time>
+            </aside>
+        </header>
+
+        {{ post.body | raw }}
+    </article>
+    <hr>
+{% endblock %}

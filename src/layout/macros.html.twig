@@ -1,0 +1,13 @@
+{% macro postlink(id, text) %}
+    <a href="{{ config.POST_URL | replace('%postid%', id, 'g') }}">{{ text }}</a>
+{% endmacro %}
+{% macro archivelink(page, text, disabled) %}
+    {% if disabled == true || page < 1 %}
+        <a class="disabled">{{ text }}</a>
+    {% else %}
+        <a href="{{ config.POSTS_LISTING_URL | replace('%page%', page, 'g') }}">{{ text }}</a>
+    {% endif %}
+{% endmacro %}
+{% macro archiveurl(page) %}{% spaceless %}
+    {{ config.POSTS_LISTING_URL | replace('%page%', page, 'g') }}
+{% endspaceless %}{% endmacro %}

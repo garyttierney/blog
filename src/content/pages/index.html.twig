@@ -1,0 +1,11 @@
+{% extends "default.html.twig" %}
+{% import 'macros.html.twig' as m %}
+{% block body %}
+    <h1>Hi!</h1>
+    <section>
+        <h2>I'm Gary Tierney.</h2>
+        <p>Welcome to my website. You may find the odd blog post here, and links to all of my projects. If you need
+            to get in touch, see the <a href="/contact.html">contact</a> page. You can check out my blog
+            posts {{m.archivelink(1, 'here')}}.</p>
+    </section>
+{% endblock %}

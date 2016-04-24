@@ -1,0 +1,27 @@
+{% extends 'base.html.twig' %}
+{% import 'macros.html.twig' as macros %}
+
+{% block content %}
+    <header class="row">
+        <div class="five columns">
+            <h1>{{ site.title }}</h1>
+            <small>{{ site.description }}</small>
+        </div>
+        <div class="seven columns">
+            <nav>
+                <ul>
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="/about.html">About</a></li>
+                    <li><a href="/contact.html">Contact</a></li>
+                    <li>{{ macros.archivelink(1, 'Archive') }}</li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        {% block body %}
+            Placeholder.
+        {% endblock %}
+    </main>
+{% endblock %}
