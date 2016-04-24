@@ -45,6 +45,9 @@
     "skeleton-css": "^2.0.4"
   },
   "scripts": {
+    "clean": "gulp clean",
+    "postinstall": "typings install  && npm prune",
+    "reinstall": "npm cache clean && npm install",
     "build": "gulp build"
   }
 }
