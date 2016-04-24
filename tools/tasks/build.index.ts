@@ -6,7 +6,6 @@ import * as through from 'through2';
 import * as gulp from 'gulp';
 import * as gulpLoadPlugins from 'gulp-load-plugins';
 import * as readingTime from 'reading-time';
-import * as hljs from 'highlight.js';
 import * as Highlights from 'highlights';
 import * as marked from 'marked';
 
