@@ -15,20 +15,20 @@
 {% endblock %}
 
 {% block body %}
-    <section class="post-listing">
+    <section class="post-listing" itemscope itemtype="http://schema.org/Blog">
 
         {% for post in pagePosts %}
-            <article>
+            <article itemscope itemprop="blogPost" itemtype="http://schema.org/BlogPosting">
                 <header class="row">
-                    <h2 class="eight columns">{{ macros.postlink(post.id, post.title) }}</h2>
+                    <h2 itemprop="headline" class="eight columns">{{ macros.postlink(post.id, post.title) }}</h2>
                     <aside class="four columns">
                         <span class="reading-time">
                             <i class="fa fa-clock-o" aria-hidden="true"></i> {{ post.readingTime }}
                         </span>
-                        <time>{{ post.date | date('Y-m-d') }}</time>
+                        <time itemprop="datePublished" datetime="{{ post.date | date('Y-m-d\TH:i') }}">{{ post.date | date('Y-m-d') }}</time>
                     </aside>
                 </header>
-                <section>
+                <section itemprop="text">
                     {{ post.summary | raw }}
                 </section>
 
