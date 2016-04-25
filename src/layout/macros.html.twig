@@ -1,6 +1,9 @@
 {% macro postlink(id, text) %}
     <a href="{{ config.POST_URL | replace('%postid%', id, 'g') }}">{{ text }}</a>
 {% endmacro %}
+{% macro posturl(id, text) %}
+    {{ config.POST_URL | replace('%postid%', id, 'g') }}
+{% endmacro %}
 {% macro archivelink(page, text, disabled) %}
     {% if disabled == true || page < 1 %}
         <a class="disabled">{{ text }}</a>

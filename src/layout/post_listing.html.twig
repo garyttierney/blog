@@ -28,7 +28,11 @@
                         <time>{{ post.date | date('Y-m-d') }}</time>
                     </aside>
                 </header>
-                {{ post.summary | raw }}
+                <section>
+                    {{ post.summary | raw }}
+                </section>
+
+                <a class="button" href="{{ macros.posturl(post.id) }}">Read more</a>
             </article>
 
             {% if not loop.last %}
