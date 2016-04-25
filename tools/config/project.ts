@@ -9,6 +9,11 @@ class ProjectConfig {
     POSTS_LISTING_URL ='/archives/page-%page%.html';
     POST_URL = '/posts/%postid%.html';
 
+    /**
+     * The fraction of categories which must match for a post to be deemed related.
+     */
+    RELATED_POST_CATEGORIES = 2/3;
+
     LAYOUT_DIR = 'src/layout';
     LAYOUT_POST_LISTING = 'post_listing.html.twig';
     LAYOUT_POST = 'post.html.twig';

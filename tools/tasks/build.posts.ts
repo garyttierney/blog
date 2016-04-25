@@ -24,22 +24,21 @@ export = function (cb : any) {
                 let relatedPosts = glob.sync(join(config.POSTS_DEST, '**', '*.json'))
                     .map(relatedPostPath => {
                         let relatedPost : PostMeta = postLoader(String(fs.readFileSync(relatedPostPath)));
-                        let matches = post.categories.filter(category => relatedPost.categories.indexOf(category) != -1);
-                        let matchCount = matches.length;
+                        let commonCategories = post.categories.filter(category => relatedPost.categories.indexOf(category) != -1);
+                        let matches = commonCategories.length;
+                        let id = basename(relatedPostPath).replace('.json', '');
 
                         return {
-                            path: post,
                             timestamp: relatedPost.timestamp,
                             categories: relatedPost.categories,
                             title: relatedPost.title,
                             summary: relatedPost.summary,
                             readingTime: relatedPost.readingTime,
-                            date: relatedPost.date,
-                            matches: matchCount,
-                            id: basename(relatedPostPath).replace('.json', '')
+                            matches,
+                            id
                         };
                     })
-                    .filter(p => p.matches > 0)
+                    .filter(p => p.matches >= (post.categories.length * (config.RELATED_POST_CATEGORIES)))
                     .sort((a : any, b : any) => {
                         let matchesCountDiff = a.matches - b.matches;
                         if (matchesCountDiff !== 0) {
