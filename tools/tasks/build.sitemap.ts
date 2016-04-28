@@ -6,7 +6,8 @@ let plugins = <any>gulpLoadPlugins();
 export = function (cb : any) {
     return gulp.src('build/**/*.html')
         .pipe(plugins.sitemap({
-            siteUrl: 'https://protectyour.pw'
+            siteUrl: 'https://protectyour.pw',
+            changefreq: 'weekly'
         }))
         .pipe(gulp.dest('./build'));
 }
