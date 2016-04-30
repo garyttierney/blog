@@ -1,5 +1,6 @@
 ---
 title: Symfony and SELinux
+longTitle: Running a Symfony application with SELinux enforcing
 categories: ['symfony', 'selinux', 'linux']
 timestamp: 1461435089
 ---

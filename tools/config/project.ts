@@ -23,7 +23,7 @@ class ProjectConfig {
     SASS_SRC = 'src/sass';
     SASS_DEST = 'build/css';
 
-    TITLE = 'protectyour.pw';
+    TITLE = 'protectyourpw';
     DESCRIPTION = 'A blog about Linux and programming';
 
     POSTS_PER_PAGE = 1;
