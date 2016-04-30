@@ -16,11 +16,9 @@
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
 
 
-    <link rel='shortcut icon' type='image/x-icon' href='/assets/favicon.ico' />
-    <link rel='shortcut icon' type='image/svg' sizes="any" href='/assets/favicon.svg' />
-    <link rel='shortcut icon' type='image/png' href='/assets/favicon.png' />
-    <link href='https://fonts.googleapis.com/css?family=Droid+Sans+Mono' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="/css/main.css">
+    <link rel='shortcut icon' type='image/x-icon' href='/assets/favicon.ico'/>
+    <link rel='shortcut icon' type='image/svg' sizes="any" href='/assets/favicon.svg'/>
+    <link rel='shortcut icon' type='image/png' href='/assets/favicon.png'/>
 </head>
 <body>
 
@@ -28,6 +26,25 @@
     {% block content %}
         Placeholder.
     {% endblock %}
+    <script type="text/javascript">
+        WebFontConfig = {
+            google: {families: ['Droid+Sans:400,700:latin']}
+        };
+        (function () {
+            var wf = document.createElement('script');
+            wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+            wf.type = 'text/javascript';
+            wf.async = 'true';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(wf, s);
+
+            var css = document.createElement('link');
+            css.rel = 'stylesheet';
+            css.href = '/css/main.css';
+            var head = document.getElementsByTagName('head')[0];
+            head.appendChild(css);
+        })();
+    </script>
 </div>
 
 </body>
