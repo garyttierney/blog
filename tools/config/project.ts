@@ -26,7 +26,7 @@ class ProjectConfig {
     TITLE = 'protectyourpw';
     DESCRIPTION = 'A blog about Linux and programming';
 
-    POSTS_PER_PAGE = 1;
+    POSTS_PER_PAGE = 5;
 }
 
 export const config = new ProjectConfig();
