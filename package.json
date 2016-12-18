@@ -7,7 +7,8 @@
     "clean": "gulp clean",
     "postinstall": "typings install  && npm prune",
     "reinstall": "npm cache clean && npm install",
-    "build": "gulp build"
+    "build": "gulp build",
+    "serve": "gulp serve"
   },
   "author": "Gary Tierney",
   "license": "MIT",
