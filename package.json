@@ -8,7 +8,8 @@
     "postinstall": "typings install  && npm prune",
     "reinstall": "npm cache clean && npm install",
     "build": "gulp build",
-    "serve": "gulp serve"
+    "serve": "gulp serve",
+    "publishsite": "gulp build && gulp publish"
   },
   "author": "Gary Tierney",
   "license": "MIT",
@@ -22,6 +23,7 @@
     "gulp-autoprefixer": "^3.1.0",
     "gulp-concat": "^2.6.0",
     "gulp-connect": "^3.2.2",
+    "gulp-gh-pages": "^0.5.4",
     "gulp-load-plugins": "^1.2.2",
     "gulp-markdown-to-json": "^0.2.1",
     "gulp-rename": "^1.2.2",
