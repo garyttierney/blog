@@ -23,7 +23,12 @@ class ProjectConfig {
     SASS_SRC = 'src/sass';
     SASS_DEST = 'build/css';
 
-    TITLE = 'protectyourpw';
+    TITLE = 'My Blog';
+    NAME = 'Gary Tierney\'s Blog';
+    AUTHOR_NAME = 'Gary Tierney';
+    AUTHOR_EMAIL = 'gary.tierney@gmx.com';
+    URL = 'https://garyttierney.github.io/';
+
     DESCRIPTION = 'A blog about Linux and programming';
 
     POSTS_PER_PAGE = 5;

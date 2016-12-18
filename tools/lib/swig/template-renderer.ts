@@ -5,7 +5,11 @@ let templateRenderer = new swig.Swig({
     locals: {
         site: {
             title: config.TITLE,
-            description: config.DESCRIPTION
+            description: config.DESCRIPTION,
+            name: config.NAME,
+            author_name: config.AUTHOR_NAME,
+            author_email: config.AUTHOR_EMAIL,
+            url: config.URL
         },
         config: config
     },
