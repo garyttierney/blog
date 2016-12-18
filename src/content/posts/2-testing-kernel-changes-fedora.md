@@ -156,3 +156,4 @@ id="asciicast-04ct05ku01kr9r87fwhbe33o8" async></script>
 * mkosi - https://github.com/systemd/mkosi
 * Virtualizing the running system - https://github.com/amluto/virtme
 * Debugging the kernel - http://www.linux-magazine.com/Online/Features/Qemu-and-the-Kernel
+* My mkosi configuration for this article - https://github.com/garyttierney/selinux-kernel-mkosi/
