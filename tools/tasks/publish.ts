@@ -11,6 +11,7 @@ export = function (cb : any) {
         .pipe(plugins.ghPages({
             force: true,
             branch: 'master',
-            origin: 'sites'
-        });
+            remoteUrl: 'git@github.com:garyttierney/garyttierney.github.io.git'
+        }));
+
 };
